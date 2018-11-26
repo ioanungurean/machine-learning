@@ -10,9 +10,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "brain.js": "^1.2.2"
+    "brain.js": "^1.5.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.9.1"
+    "parcel-bundler": "^1.10.3"
   }
 }

@@ -1,0 +1,19 @@
+@import 'shared.scss';
+@import 'sizes.scss';
+
+.app {
+  display: flex;
+  flex-direction: column;
+
+  .app_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: map-get($sizes, big);
+
+    > * {
+      margin-bottom: map-get($sizes, big);
+    }
+  }
+}

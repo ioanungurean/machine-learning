@@ -1,0 +1,47 @@
+@import 'sizes.scss';
+@import 'colors.scss';
+
+.theme {
+  display: flex;
+  flex-direction: column;
+
+  padding: map-get($sizes, large);
+  font-size: map-get($sizes, font-code);
+  font-family: 'Courier New', Courier, monospace;
+  background-color: map-get($colors, dark-blue);
+  border-radius: 1%;
+
+  > :not(:last-child) {
+    margin-bottom: map-get($sizes, medium);
+  }
+
+  .line {
+    > :not(:first-child) {
+      padding-left: map-get($sizes, small);
+    }
+
+    .no-padding {
+      padding-left: 0;
+    }
+
+    .empty {
+      height: map-get($sizes, large);
+    }
+  }
+
+  .indent1 {
+    margin-left: map-get($sizes, large);
+  }
+
+  .indent2 {
+    margin-left: 2 * map-get($sizes, large);
+  }
+
+  .indent3 {
+    margin-left: 3 * map-get($sizes, large);
+  }
+
+  .indent4 {
+    margin-left: 4 * map-get($sizes, large);
+  }
+}

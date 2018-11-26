@@ -1,0 +1,16 @@
+@import 'sizes.scss';
+
+.theme-rating {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  > :not(:last-child) {
+    margin-bottom: map-get($sizes, small);
+  }
+
+  .title {
+    font-size: map-get($sizes, font-title);
+  }
+}
